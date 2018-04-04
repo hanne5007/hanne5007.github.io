@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribbler Documentation - a code documentation page template for codrops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">V<span class="logo__thin">ideo Mosaic</span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Introduction</li>
+          <li class="js-btn">Video Mosaic</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Introduction</h3>
+          <p> Multiple videos of the same scene were used to create a video mosaic. Features in the video frames were detected, described and matched. 
+          Please refer to my Github for more details. </p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Video of Mosaicing</h3>
+          <p>
+          Final video mosaic based on three videos was shown as follows.</p>
+          <video id="video" controls height="400">
+            <source src="mosaic.mp4" type="video/mp4">
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>

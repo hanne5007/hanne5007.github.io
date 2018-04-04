@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribbler Documentation - a code documentation page template for codrops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">F<span class="logo__thin">ace Swap in Videos</span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Introduction</li>
+          <li class="js-btn">Videos of Face Swap</li>
+          <li class="js-btn">Images of Face Swap</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Introduction</h3>
+          <p> Face swapping was implemented for two videos. The goal was to maintain the original facial expression of the target face, while wearing the facial landmarks obtained from the source face. 
+          Please refer to my Github for more details. </p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Videos of Face Swappping</h3>
+          <p>Both original videos and the videos after face swapping were presented.
+          </p>
+          <video id="video" controls width="500">
+            <source src="final.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500">
+            <source src="FrankUnderwood.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500">
+            <source src="MrRobot.mp4" type="video/mp4">
+          </video>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Images of Face Swapping</h3>
+          <p>(No offense in this part.)</p>
+          <p>The face swapping was done between celebrities' pictures. The first set: 
+          </p>
+          <div id="images">
+            <img src="0.png" style="width:500px">
+          </div>
+          <div id="images">
+            <img src="suzy.png" style="height:150px">
+            <img src="axin.png" style="height:150px">
+          </div>
+          <p>And the second set:   
+          <div id="images">
+            <img src="1.png" style="height:150px">
+            <img src="suzy.png" style="height:150px">
+          </div>
+          <div id="images">
+            <img src="trump.png" style="height:150px">
+            <img src="2.png" style="height:150px">
+          </div>
+        </section>
+        
+      </article>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>

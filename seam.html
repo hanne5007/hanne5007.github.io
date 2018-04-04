@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribbler Documentation - a code documentation page template for codrops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">S<span class="logo__thin">eam Carving</span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Introduction</li>
+          <li class="js-btn">GIFs for Seam Carving</li>
+          <li class="js-btn">Images of Object Removal</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Introduction</h3>
+          <p> 
+            Seam carving was implemented for content-aware image resizing. It uses an energy function to always find the lowest energy pixels forming a path. By removing or inserting these paths, it effectively reduce or enlarge the image size. 
+          </p>
+          <p>
+            Further, seam carving can be used for object removal. Here I presented an effective way to automatically detect objects and remove the unwanted ones in one click. Body detection algorithms were utilized to detect pedestrians in images, and those of your interest would then be removed by weighted seam carving.
+          </p>
+          <p>
+          Please refer to my Github for more details. </p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">GIFs for Seam Carving</h3>
+          <p>The process of resizing images using seam carving were presented.
+          </p>
+          <div id="images">
+            <img src="1_output.gif" style="width:300px">
+          </div>
+          <div id="images">
+            <img src="3_output.gif" style="width:500px">
+          </div>
+          <div id="images">
+            <img src="test1_output.gif" style="width:500px">
+          </div>
+          <div id="images">
+            <img src="test2_output.gif" style="width:500px">
+          </div>
+          <div id="images">
+            <img src="2_output.gif" style="width:500px">
+          </div>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Images of Object Removal</h3>
+          <p>Following are the original image with choices, and the image after removing object 5, as well as the image after enlarging the size.
+          </p>
+          <div id="images">
+            <img src="choice.jpg" style="height:250px">
+          </div>
+          <div id="images">
+            <img src="carv_dj.png" style="height:350px">
+            </div>
+          <div id="images">
+            <img src="ins_dj.png" style="height:350px">
+
+          </div>
+          
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>

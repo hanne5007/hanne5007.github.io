@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribbler Documentation - a code documentation page template for codrops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">M<span class="logo__thin">orphing and Blending</span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Introduction</li>
+          <li class="js-btn">GIFs of Image Morphing</li>
+          <li class="js-btn">Images of Blending</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Introduction</h3>
+          <p> A morph is a simultaneous warp of the image shape and a cross-dissolve of the image colors. Image morphing was
+             implemented to generate face morphing videos using the triangulation model and the Thin Plate Spline model. </p>
+             <p>
+             Blending of two images was implemented in gradient domain. It is a processing technique with numerous applications such as non-photorealistic rendering, contrast enhancement, texture flattening and tone-mapping. 
+          </p> <p>Please refer to my Github for more details. </p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">GIFs of Image Morphing</h3>
+          <p>First one is the morphing process from me to Amber Heard. 
+          <div id="images">
+            <img src="Morphing_output_Me to Amber Heard.gif" style="height:300px">
+          </div>
+          <p> Second one is the morphing process from me in 2017 to me in 2016. 
+          </p>
+          <div id="images">
+            <img src="Morphing_output_back to 2016.gif" style="width:300px">
+          </div>
+          <p>Last one shows the iterative morphing process of a square consisting of 4 triangles.</p>  
+          <div id="images">
+            <img src="project2_testimg.png" style="height:200px">
+            <img src="Morphing_eval_testimg.gif" style="height:200px">
+          </div>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Images of Blending</h3>
+          <p>First one is a minion blended onto the of bronze "Ben on the Bench".  
+          </p>
+          <div id="images">
+            <img src="Blending_output_sample.png" style="width:500px">
+          </div>
+          <div id="images">
+            <img src="SourceImage.jpg" style="height:200px">
+            <img src="TargetImage.jpg" style="height:200px">
+          </div>
+
+          <p> Second one is a cat blended onto a scenery view, in replace of a building.</p> 
+           <div id="images">
+            <img src="Blending_output_CatBuilding.png" style="height:450px">
+          </div>
+          <div id="images">
+            <img src="source.jpg" style="height:250px">
+            <img src="target.jpg" style="height:250px">
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>

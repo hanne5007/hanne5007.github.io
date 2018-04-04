@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribbler Documentation - a code documentation page template for codrops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">S<span class="logo__thin">truction from Motion</span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Introduction</li>
+          <li class="js-btn">3D Point Cloud</li>
+          <li class="js-btn">2D Reprojection Points</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Introduction</h3>
+          <p> SfM was implemented to reconstruct a 3D point cloud and camera poses given 6 images as follows. </p>
+          <div id="images">
+            <img src="image1.bmp" style="width:200px">
+            <img src="image2.bmp" style="width:200px">
+            <img src="image3.bmp" style="width:200px">
+          </div>
+          <div id="images">
+            <img src="image4.bmp" style="width:200px">
+            <img src="image5.bmp" style="width:200px">
+            <img src="image6.bmp" style="width:200px">
+          </div>
+          <p>
+          Perspective-n-point was used to register additional images given 3D-2D correspondences, and nonlinear optimization and RANSAC were performed. Nonlinear triangulation was applied to refine the 3D locations given camera poses in order to minimize reprojection error. Please refer to my Github for more details. </p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">3D Point Cloud</h3>
+          <p>The final 3D point clouds with all six camera poses were presented.
+          </p>
+          <div id="images">
+            <img src="3d0.png" style="width:500px">
+          </div>
+          <div id="images">
+            <img src="3d1.png" style="width:500px">
+          </div>
+          <div id="images">
+            <img src="3d2.png" style="width:500px">
+          </div>
+          <p>Also, following figure showed only the six camera poses.
+          </p>
+          <div id="images">
+            <img src="cam.png" style="width:500px">
+          </div>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">2D Reprojection Points</h3>
+          <p>The 3D points shown above were reprojected to each image, and the 2D reprojection results were as follows.
+          </p>
+           <div id="images">
+            <img src="2dcam1.png" style="width:600px">
+          </div>
+          <div id="images">
+            <img src="2dcam2.png" style="width:600px">
+          </div>
+          <div id="images">
+            <img src="2dcam3.png" style="width:600px">
+          </div>
+           <div id="images">
+            <img src="2dcam4.png" style="width:600px">
+          </div>
+          
+        </section>
+        
+      </article>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>

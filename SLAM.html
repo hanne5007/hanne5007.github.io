@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribbler Documentation - a code documentation page template for codrops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">S<span class="logo__thin">LAM and Texture Mapping</span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Introduction</li>
+          <li class="js-btn">Videos of SLAM</li>
+          <li class="js-btn">Videos of Texture Mapping</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Introduction</h3>
+          <p>SLAM was implemented for an indoor environment, by integration of the IMU orientation and odometry information from a walking humanoid with LIDAR. A 2D occupancy grid map was constructed, and robot poses were predicted and updated by Monte Carlo Localization (MCL)/Particle Filter Localization. Then, given camera and depth imagery, a 2D texure map for the floor was built based on estimated robot poses. </p><p>My SLAM algorithm has a pretty satisfactory results and strongly competitive computation speed. Please refer to my Github for more details. </p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Videos of SLAM</h3>
+          <p>The process of SLAM and the odometry in red (raw odometry in blue) were presented.
+          </p>
+          <video id="video" controls width="500">
+            <source src="test_slam.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500" >
+            <source src="train_slam0.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500">
+            <source src="train_slam3.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500">
+            <source src="train_slam2.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500">
+            <source src="train_slam1.mp4" type="video/mp4">
+          </video>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Videos of Texture Mapping</h3>
+          <p>The videos of generating the texture maps were as follows.
+          </p>
+          <video id="video" controls width="500">
+            <source src="texture.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500">
+            <source src="texture0.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500">
+            <source src="texture3.mp4" type="video/mp4">
+          </video>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Videos of Ground Detection</h3>
+          <p>The videos of the ground detection results in all RGB images were shown as follows.
+          </p>
+          <video id="video" controls width="500">
+            <source src="gd.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500">
+            <source src="gd0.mp4" type="video/mp4">
+          </video>
+          <video id="video" controls width="500">
+            <source src="gd3.mp4" type="video/mp4">
+          </video>
+        </section>
+        
+      </article>
+    </div>
+
+    <footer class="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>
